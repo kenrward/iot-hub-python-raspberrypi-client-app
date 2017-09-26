@@ -15,6 +15,7 @@ import RPi.GPIO as GPIO
 from Adafruit_BME280 import *
 import re
 from telemetry import Telemetry
+from sense_hat import SenseHat
 
 # HTTP options
 # Because it can poll "after 9 seconds" polls will happen effectively
