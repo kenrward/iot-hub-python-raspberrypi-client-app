@@ -73,7 +73,7 @@ CONNECTION_STRING = sys.argv[1]
 if not is_correct_connection_string():
     print ( "Device connection string is not correct." )
     telemetry.send_telemetry_data(None, EVENT_FAILED, "Device connection string is not correct.")
-    sys.exit(0)
+    # sys.exit(0)
 
 MSG_TXT = "{\"deviceId\": \"Raspberry Pi - Python\",\"temperature\": %f,\"humidity\": %f}"
 
